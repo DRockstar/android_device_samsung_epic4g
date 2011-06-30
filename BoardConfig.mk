@@ -24,3 +24,9 @@ TARGET_PREBUILT_KERNEL := device/samsung/epic4g/kernel
 BOARD_CUSTOM_RECOVERY_KEYMAPPING:= ../../device/samsung/epic4g/recovery_ui.c
 #BOARD_HAS_NO_SELECT_BUTTON := true
 
+# custom lun0 file for USB Mass Storage
+BOARD_UMS_LUNFILE := /sys/devices/platform/s3c-usbgadget/gadget/lun0/file
+
+BOARD_BOOT_BML := /dev/block/bml8
+BOARD_RECOVERY_BML := /dev/block/bml9
+
