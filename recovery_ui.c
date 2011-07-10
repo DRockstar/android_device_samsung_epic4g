@@ -56,22 +56,21 @@ int device_reboot_now(volatile char* key_pressed, int key_code) {
 int device_handle_key(int key_code, int visible) {
     if (visible) {
         switch (key_code) {
-            case 51:
-            case 39:
+            case 1:
+            case 19:
                 return HIGHLIGHT_UP;
 
-            case 52:
-            case 49:
+            case 50:
+            case 24:
                 return HIGHLIGHT_DOWN;
 
-            case 158:
-            case 46:
-            case 40:
+            case 15:
+            case 43:
+            case 23:
                 return SELECT_ITEM;
             
-            case 102:
-            case 58:
-            case 30:
+            case 8:
+            case 18:
                 if (!get_allow_toggle_display())
                     return GO_BACK;
         }
