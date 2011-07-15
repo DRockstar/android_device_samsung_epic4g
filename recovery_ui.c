@@ -20,7 +20,8 @@
 #include "common.h"
 #include "extendedcommands.h"
 
-char* MENU_HEADERS[] = { "Use vol keys to highlight and menu to select.",
+char* MENU_HEADERS[] = { "Use vol keys to highlight,",
+                         "and power to select.",
                          "",
                          NULL };
 
@@ -64,6 +65,7 @@ int device_handle_key(int key_code, int visible) {
             case 24:
                 return HIGHLIGHT_DOWN;
 
+            case 58:
             case 15:
             case 43:
             case 23:
