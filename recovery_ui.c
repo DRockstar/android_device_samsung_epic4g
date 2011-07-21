@@ -58,10 +58,12 @@ int device_handle_key(int key_code, int visible) {
     if (visible) {
         switch (key_code) {
             case 1:
+            case 2:
             case 19:
                 return HIGHLIGHT_UP;
 
             case 50:
+            case 16:
             case 24:
                 return HIGHLIGHT_DOWN;
 
